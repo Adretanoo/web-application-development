@@ -27,12 +27,12 @@ class ComposerStaticInit38920378f70760a461e0b49be078d07c
         'd4e415514e4352172d58f02433fa50e4' => __DIR__ . '/..' . '/amphp/socket/src/functions.php',
         '1c2dcb9d6851a7abaae89f9586ddd460' => __DIR__ . '/..' . '/amphp/socket/src/Internal/functions.php',
         '7fec264e4908bd2976476a6241c3f4d0' => __DIR__ . '/..' . '/amphp/socket/src/SocketAddress/functions.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
         '5d92623b88cbe7c988a6aca6fa79ebce' => __DIR__ . '/..' . '/amphp/parallel/src/Context/functions.php',
         'c20d640a0b06382af5bbe7e0c7475adf' => __DIR__ . '/..' . '/amphp/parallel/src/Context/Internal/functions.php',
         '42a785d14bae29c606457755ffd1653b' => __DIR__ . '/..' . '/amphp/parallel/src/Ipc/functions.php',
         '805558626a43dc52f2afc82368f8d62e' => __DIR__ . '/..' . '/amphp/parallel/src/Worker/functions.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
     );
 
@@ -89,6 +89,7 @@ class ComposerStaticInit38920378f70760a461e0b49be078d07c
             'Psr\\Container\\' => 14,
             'Psalm\\' => 6,
             'PhpParser\\' => 10,
+            'PhpOption\\' => 10,
             'PhpCsFixer\\' => 11,
             'PHPStan\\PhpDocParser\\' => 21,
         ),
@@ -102,6 +103,10 @@ class ComposerStaticInit38920378f70760a461e0b49be078d07c
         array (
             'Kelunik\\Certificate\\' => 20,
         ),
+        'G' =>
+        array (
+            'GrahamCampbell\\ResultType\\' => 26,
+        ),
         'F' =>
         array (
             'Fidry\\CpuCoreCounter\\' => 21,
@@ -112,6 +117,7 @@ class ComposerStaticInit38920378f70760a461e0b49be078d07c
         ),
         'D' =>
         array (
+            'Dotenv\\' => 7,
             'Doctrine\\Deprecations\\' => 22,
         ),
         'C' =>
@@ -283,6 +289,10 @@ class ComposerStaticInit38920378f70760a461e0b49be078d07c
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PhpOption\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
         'PhpCsFixer\\' =>
         array (
             0 => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src',
@@ -308,6 +318,10 @@ class ComposerStaticInit38920378f70760a461e0b49be078d07c
         array (
             0 => __DIR__ . '/..' . '/kelunik/certificate/src',
         ),
+        'GrahamCampbell\\ResultType\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
         'Fidry\\CpuCoreCounter\\' =>
         array (
             0 => __DIR__ . '/..' . '/fidry/cpu-core-counter/src',
@@ -315,6 +329,10 @@ class ComposerStaticInit38920378f70760a461e0b49be078d07c
         'Evenement\\' =>
         array (
             0 => __DIR__ . '/..' . '/evenement/evenement/src',
+        ),
+        'Dotenv\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
         'Doctrine\\Deprecations\\' =>
         array (

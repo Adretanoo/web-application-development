@@ -12,11 +12,11 @@ class Database
     public static function getConnection(): PDO
     {
         if (self::$instance === null) {
-            $host = '127.0.0.1';
-            $db   = 'task_manager';
-            $user = 'postgres';
-            $pass = '2007';
-            $port = 5432;
+            $host = $_ENV['DB_HOST'];
+            $db   = $_ENV['DB_NAME'];
+            $user = $_ENV['DB_USER'];
+            $pass = $_ENV['DB_PASS'];
+            $port = $_ENV['DB_PORT'];
 
             $dsn = "pgsql:host=$host;port=$port;dbname=$db";
             $options = [

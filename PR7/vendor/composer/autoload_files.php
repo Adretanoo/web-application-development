@@ -26,11 +26,11 @@ return array(
     'd4e415514e4352172d58f02433fa50e4' => $vendorDir . '/amphp/socket/src/functions.php',
     '1c2dcb9d6851a7abaae89f9586ddd460' => $vendorDir . '/amphp/socket/src/Internal/functions.php',
     '7fec264e4908bd2976476a6241c3f4d0' => $vendorDir . '/amphp/socket/src/SocketAddress/functions.php',
+    'a4a119a56e50fbb293281d9a48007e0e' => $vendorDir . '/symfony/polyfill-php80/bootstrap.php',
     '9d2b9fc6db0f153a0a149fefb182415e' => $vendorDir . '/symfony/polyfill-php84/bootstrap.php',
     '5d92623b88cbe7c988a6aca6fa79ebce' => $vendorDir . '/amphp/parallel/src/Context/functions.php',
     'c20d640a0b06382af5bbe7e0c7475adf' => $vendorDir . '/amphp/parallel/src/Context/Internal/functions.php',
     '42a785d14bae29c606457755ffd1653b' => $vendorDir . '/amphp/parallel/src/Ipc/functions.php',
     '805558626a43dc52f2afc82368f8d62e' => $vendorDir . '/amphp/parallel/src/Worker/functions.php',
-    'a4a119a56e50fbb293281d9a48007e0e' => $vendorDir . '/symfony/polyfill-php80/bootstrap.php',
     '23c18046f52bef3eea034657bafda50f' => $vendorDir . '/symfony/polyfill-php81/bootstrap.php',
 );
