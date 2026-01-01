@@ -1,0 +1,37 @@
+{% extends "layouts/base.twig" %}
+
+{% block title %}Реєстрація{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Реєстрація</h1>
+
+        {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+
+        <form action="/register" method="post" class="mx-auto" style="max-width: 400px;">
+            <div class="mb-3">
+                <label>Логін</label>
+                <input type="text" name="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Email (не обов'язково)</label>
+                <input type="email" name="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Пароль</label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label>Повторіть пароль</label>
+                <input type="password" name="password_confirm" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Зареєструватися</button>
+        </form>
+
+        <p class="text-center mt-3">
+            Вже є акаунт? <a href="/login">Увійти</a>
+        </p>
+    </div>
+{% endblock %}

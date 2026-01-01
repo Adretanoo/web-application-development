@@ -1,0 +1,41 @@
+{% extends "layouts/base.twig" %}
+
+{% block title %}Редагувати: {{ post.title }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="mb-4">Редагувати пост</h1>
+
+            <form action="/posts/{{ post.id }}" method="post">
+                <input type="hidden" name="_METHOD" value="PUT">
+
+                <div class="mb-3">
+                    <label class="form-label">Заголовок</label>
+                    <input type="text" name="title" class="form-control" value="{{ post.title }}" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Зміст</label>
+                    <textarea name="content" class="form-control" rows="10" required>{{ post.content }}</textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Теги (Ctrl+клік для вибору кількох)</label>
+                    <select name="tags[]" class="form-select" multiple size="8">
+                        {% for tag in tags %}
+                            <option value="{{ tag.id }}" {% if tag.id in selectedTags %}selected{% endif %}>
+                                {{ tag.name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-warning btn-lg">Зберегти зміни</button>
+                    <a href="/posts/{{ post.id }}" class="btn btn-secondary btn-lg ms-2">Скасувати</a>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
